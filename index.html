@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treelivery</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <script src="./index.js"></script>
+    <style>
+        body {
+            all: unset;
+            font-family: 'Roboto', sans-serif;
+            --g-dark: #283618;
+            --g-light: #606c38;
+            --light: #fefae0;
+            --b-dark: #bc6c25;
+            --b-light: #dda15e;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            background-color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        header {
+            position: fixed;
+            z-index: 10000;
+            top: 0;
+            right: 0;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background-color: #fff;
+            color: var(--g-light);
+            font-weight: 700;
+            width: 100%;
+            height: 60px;
+        }
+
+        .header-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            width: 50%;
+            height: 100%;
+        }
+
+        .header-logo {
+            all: unset;
+            cursor: pointer;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 5px;
+        }
+
+        .anchors {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+
+            width: auto;
+            height: 100%;
+        }
+
+        .anchors a {
+            all: unset;
+            cursor: pointer;
+        }
+
+        .anchors a:hover {
+            color: var(--g-dark);
+            transform: scale(1.05);
+            transition: .3s;
+        }
+
+        section {
+            padding: 80px 70%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .section-text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            height: 100%;
+            max-width: 500px;
+        }
+        
+        .section-text h1 {
+            all: unset;
+
+            font-size: 60px;
+            font-weight: 700;
+        }
+        
+        .section-text p {
+            font-size: 20px;
+        }
+
+        #objectives {
+            margin-top: 60px;
+
+            padding: 80px 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 50px;
+        }
+        #objectives h1 {
+            color: var(--g-light);
+        }
+        #objectives p {
+            color: var(--b-dark);
+        }
+
+        #aboutus {
+            background-color: var(--light);
+        }
+        #aboutus h1 {
+            color: var(--b-dark);
+        }
+        #aboutus p {
+            color: var(--g-light);
+        }
+
+        #products h1 {
+            color: var(--b-dark);
+        }
+        #products p {
+            color: var(--g-light);
+        }
+        #products div {
+            color: var(--b-light);
+            font-size: 18px;
+        }
+
+        #contactus {
+            background-color: var(--light);
+        }
+        #contactus h1 {
+            color: var(--b-dark);
+        }
+        #contactus p {
+            color: var(--g-light);
+        }
+
+        .email-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            
+            width: 25%;
+            height: max-content;
+        }
+
+        .email-form textarea {
+            all: unset;
+            
+            padding: 20px;
+            width: 80%;
+            height: 150px;
+            background-color: var(--b-light);
+            border-radius: 5px;
+            color: white;
+            word-wrap: break-word;
+
+        }
+
+        .email-form textarea::placeholder {
+            color: white;
+        }
+
+        .email-form a {
+            margin-top: 15px;
+            padding: 10px 30px;
+            color: white;
+            background-color: var(--g-dark);
+            font-size: 20px;
+            border-radius: 5px;
+            
+            text-decoration: none;
+        }
+
+        .email-form a:hover {
+            background-color: var(--g-light);
+            transition: .5s ease-in-out;
+        }
+
+    </style>
+    <div class="container">
+        <header>
+            <div class="header-container">
+                <a href="#" class="header-logo">
+                    <img width="35" src="./images/logo.jpg" alt="logo">
+                    Treelivery
+                </a>
+                <div class="anchors">
+                    <a href="#objectives">Objetivo</a>
+                    <a href="#aboutus">Sobre nós</a>
+                    <a href="#products">Produtos</a>
+                    <a href="#contactus">Contato</a>
+                </div>
+            </div>
+        </header>
+        <section id="objectives">
+            <img src="./images/log-wood.png" width="500" alt="banner">
+            <div class="section-text">
+                <h1>Troncos de qualidade na sua porta!</h1>
+                <p>Olá! Bem vindo ao TreeLivery, o melhor web-negócio para todas suas necessidades envolvendo troncos! Seja você um dono de uma carpintaria buscando material ou até um apenas um sujeito querendo fazer uma grande fogueira, temos uma grande variedade de troncos da melhor qualidade disponíveis por preços acessíveis.</p>
+            </div>
+        </section>
+        <section id="aboutus">
+            <div class="section-text">
+                <h1>Sobre nós</h1>
+                <p>Nossa empresa está atuando desde 2020 e sempre com um objetivo em mente, entregar carregamentos de troncos de árvores para todo o país com facilidade, acessibilidade e rapidez. Ela foi trazida a realidade quando percebemos que este mercado pertence a um nicho pouco atendido online, com isso, dedicamos anos de esforço e dinheiro para facilitar a vida dos nossos clientes.</p>
+            </div>
+            <img src="./images/logo.png" width="500" alt="banner">
+        </section>
+        <section id="products">
+            <img src="./images/cart.svg" width="400" alt="banner">
+            <div class="section-text">
+                <h1>Nossos produtos!</h1>
+                <p>Peça os tipos mais variados de troncos e receba na sua casa de forma rapida e eficiente.</p>
+                <div>Nós da TreeLivery prezamos pela qualidade e variedade, tendo isso em mente, nós proporcionamos todos os tipos de tronco que possa imaginar na melhor condição. Também proporcionamos uma alta gama de escolhas na hora de realizar seu pedido, permitindo a você escolher quantos troncos você deseja no carregamento, além do tipo e tamanho de cada um, após o tempo listado, entregaremos o seu lote no local designado durante o pedido. Não apenas isso mas também nos importamos com o planeta que oferece este recurso tão valioso, sendo assim, afirmamos que toda árvore usada em nossos procedimentos são replantadas e bem cuidadas.</div>
+            </div>
+        </section>
+        <section id="contactus">
+            <div class="section-text">
+                <h1>Contate-nos!</h1>
+                <p>Envie um email perguntando-nos sobre suas dúvidas.</p>
+            </div>
+            <div class="email-form">
+                <textarea id="email-input" oninput="changeEmailBody(event)" placeholder="Digite aqui..." type="text"></textarea>
+                <a id="email-output" href="mailto:silvadesordi@gmail.com?subject=Olá, vim pelo contate-nos do site!&body=">Enviar</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
